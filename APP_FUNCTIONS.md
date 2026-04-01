@@ -533,8 +533,6 @@ You can export projects in two ways:
 - When replacing an existing project, the currency cannot be changed. If the imported project has a different currency, the import will fail with an error
 - All project relationships (transactions, NAV history) are preserved in the import
 
-For detailed information about the import data format, see [IMPORT_DATA_FORMAT.md](./IMPORT_DATA_FORMAT.md).
-
 ---
 
 ## Performance Metrics and Analytics
@@ -732,7 +730,7 @@ The Portfolio screen provides a high-level overview of your entire portfolio wit
 - **DPI (Distribution to Paid-In)**: Ratio of distributions received to capital invested
 - **TVPI (Total Value to Paid-In)**: Ratio of total value (distributions + residual value) to capital invested
 - **RVPI (Residual Value to Paid-In)**: Ratio of current residual value to capital invested
-- **Estimated Return**: The projected amount that would be returned if all investments grew at the target IRR rate. This metric compounds only investment cash flows forward to the estimation date using the project's target IRR. For portfolios, each project's estimated return is calculated separately using that project's target IRR, then summed together. See [ESTIMATED_RETURN_METRIC.md](./docs/ESTIMATED_RETURN_METRIC.md) for detailed calculation approach
+- **Estimated Return**: The projected amount that would be returned if all investments grew at the target IRR rate. This metric compounds only investment cash flows forward to the estimation date using the project's target IRR. For portfolios, each project's estimated return is calculated separately using that project's target IRR, then summed together.
 - **Gap to Target**: The difference between the actual IRR and the target IRR (IRR minus Target IRR). Positive values indicate performance above target, negative values indicate performance below target
 - **NAV (Net Asset Value)**: The current valuation of the project
 - **Equity**: The current equity value in the project (calculated as Total Invested - Total Returned + Current NAV)
