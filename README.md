@@ -37,6 +37,7 @@ irrtracker does not execute trades, custody assets, or provide personalized inve
 | **Insights** | Optional view that relates each project to its **category** and **investment strategy** for a quick alignment-style snapshot (prototype feature; not advice). |
 | **Reports** | Printable or shareable reports with configurable detail and optional timelines and alert summaries. |
 | **Language** | Interface available in several languages; you can follow the system language or pick one in settings. |
+| **Valuation date** | Choose **today** or **latest recorded activity** (last cash flow or NAV) as the horizon for metrics — for **both** individual projects **and** portfolio Summary/charts. |
 
 ---
 
