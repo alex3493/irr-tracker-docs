@@ -323,7 +323,9 @@ View and edit rates for non-reference currencies. Only positive rates are accept
 
 ### Metrics display
 
-- **Valuation date** — Whether single-project metrics use **today** or the **latest transaction or NAV date** for time-sensitive calculations.
+- **Valuation date** — Controls how the app picks the **end of the horizon** for **date-dependent** metrics. This applies to **single-project** views **and** to **portfolio-level** Summary and Portfolio charts (including when several projects are selected).  
+  - **Latest transaction date** (default): For each **open** project, the horizon runs through the **later** of your **last cash-flow date** and your **latest NAV date**. For a **portfolio** view, the timeline extends through the **latest** of those effective dates across the projects included. If a project has no activity yet, the app falls back to **today** for that project. **Closed** projects are always taken only **through their close date**; this setting does not extend them past that.  
+  - **Today's date**: **Open** projects are valued through **today** (the app still respects each project’s close date when a project is closed).
 - **Show in project card** — Which optional metrics appear on Home cards (core metrics like invested, returned, IRR, and NAV usually stay visible).
 - **Line charts (Summary)**, **Comparison bar charts (Summary)**, **Portfolio screen**, **Print and share** — Each section can **mirror the project card** or use its **own** checklist of metrics.
 
@@ -383,6 +385,6 @@ Some versions also offer **Load sample data** from this area to explore the app 
 - **TVPI** — (Returned + NAV) divided by invested (total value per unit called).
 - **RVPI** — NAV divided by invested (unrealized per unit called).
 - **Net capital** — Invested minus returned on a **cash-flow basis** only; NAV is separate and is not added into net capital. Negative net capital can mean you have taken more out than you put in; NAV still captures remaining value.
-- **Target value / required return / accumulated value** — Target-based views: where invested capital would stand at the target rate, how much more return is needed to hit the target IRR, and how historical cash flows compound at the target rate to the valuation date. Each project uses its own target IRR; portfolio figures combine projects appropriately.
+- **Target value / required return / accumulated value** — Target-based views: where invested capital would stand at the target rate, how much more return is needed to hit the target IRR, and how historical cash flows compound at the target rate to the valuation date. Each project uses its own target IRR; portfolio figures combine projects using the same **valuation date** setting as in **Settings → Metrics display**.
 
 For full definitions and “why this number might look different,” use **Help → Metric definitions** or the **(i)** icons in the app.
