@@ -17,7 +17,7 @@ This note describes **how irrtracker defines and computes** the main performance
 - Time between dates is measured in **fractional years** using **365.25 days per year** (astronomical year basis).
 - If $d$ is the number of days between two dates, the length in years is  
   $$
-  t = \frac{d}{365.25}.
+  \t = \frac{d}{365.25}.
   $$
 - **IRR** and **target IRR** are stored and shown as **percentages** in the interface (e.g. 12 for 12%), but formulas below use **decimal rates** (e.g. $r = 0.12$) unless stated otherwise.
 
