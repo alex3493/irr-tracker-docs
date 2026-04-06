@@ -15,10 +15,12 @@ This note describes **how irrtracker defines and computes** the main performance
 ### Time and rates
 
 - Time between dates is measured in **fractional years** using **365.25 days per year** (astronomical year basis).
-- If $d$ is the number of days between two dates, the length in years is  
-  $$
-  t = \frac{d}{365.25}.
-  $$
+- If $d$ is the number of days between two dates, the length in years is:
+
+$$
+t = \frac{d}{365.25}.
+$$
+
 - **IRR** and **target IRR** are stored and shown as **percentages** in the interface (e.g. 12 for 12%), but formulas below use **decimal rates** (e.g. $r = 0.12$) unless stated otherwise.
 
 ### Currencies
@@ -142,15 +144,15 @@ $$
 
 1. Compute the present value of the relevant cash flows at the target rate $r$, using the **first** flow date as the base for xNPV:
 
-   $$
-   PV = \text{xNPV}(r).
-   $$
+$$
+PV = \text{xNPV}(r).
+$$
 
 2. Let $t$ be years from that base date to $T$. The required future value $FV$ at $T$ that clears NPV is:
 
-   $$
-   FV = -PV \cdot (1 + r)^{t}.
-   $$
+$$
+FV = -PV \cdot (1 + r)^{t}.
+$$
 
 Intuition: $PV + \dfrac{FV}{(1+r)^t} = 0$ when the only missing piece is a single value at $T$.
 
