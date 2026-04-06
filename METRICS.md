@@ -69,7 +69,7 @@ where $t_i$ is the time in years from the base date to flow $i$.
 
 ---
 
-## Multiples (DPI, TVPI, RVPI, MOIC)
+## Multiples (DPI, TVPI, RVPI)
 
 Let:
 
@@ -84,7 +84,6 @@ Let:
 | **DPI** (paid-in distributions) | $\displaystyle \text{DPI} = \frac{R}{I}$ | How much you have received back **per unit** of capital called. |
 | **RVPI** (residual to paid-in) | $\displaystyle \text{RVPI} = \frac{N}{I}$ | Unrealized value still in the deal, per unit called. |
 | **TVPI** (total value to paid-in) | $\displaystyle \text{TVPI} = \frac{R + N}{I}$ | **DPI + RVPI**; total economic value (realized + unrealized) per unit called. |
-| **MOIC** (multiple on invested capital) | $\displaystyle \text{MOIC} = \frac{R + N}{I}$ | Same combination as **TVPI** in this app’s definition. |
 
 ---
 
@@ -191,7 +190,7 @@ This **weighted** rate is **not** the same object as **target value** for a port
 |--------|------|------------|
 | XIRR | Rate | Dated signed cash flows (+ exit NAV treatment for IRR) |
 | xNPV | Currency | Same flows, fixed discount rate |
-| DPI / TVPI / RVPI / MOIC | Ratio | Invested, returned, NAV |
+| DPI / TVPI / RVPI | Ratio | Invested, returned, NAV |
 | Net capital | Currency | Invested − returned (no NAV) |
 | Target value | Currency | Investments only, compound at target IRR to $T$ |
 | Accumulated value | Currency | Investments + returns (excl. exit NAV line), compound at target IRR |
