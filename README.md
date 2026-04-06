@@ -46,6 +46,7 @@ irrtracker does not execute trades, custody assets, or provide personalized inve
 - **[APP_FUNCTIONS.md](APP_FUNCTIONS.md)** — Step-by-step **user guide**: screens, menus, import/export, settings, and tips for day-to-day use.
 - **[METRICS.md](METRICS.md)** — **Formulas and definitions** for XIRR, multiples, target-based metrics, and related calculations (math reference, no code).
 - **[IMPORT_DATA_FORMAT.md](IMPORT_DATA_FORMAT.md)** — Describes the **JSON** layout used when you export or import data yourself (for backups or advanced workflows).
+- **[ALERTS.md](ALERTS.md)** — How **alerts** and **alert rules** work: time vs value rules, scope, and import/export of rules.
 
 If you are evaluating irrtracker, the best way to understand it is to open the app, explore the Home and Portfolio screens, and use **Help** from the main menu when a label or metric is unfamiliar.
 
